@@ -8,6 +8,27 @@ function Homepage() {
   return (
     <div>
       <h1>This is the Homepage component</h1>
+      <Link to={"/beers"}>
+        <div className="container">
+          <h2 className="h2">Check all Beers</h2>
+          <img src={allBeersImg} alt="all-beers" width={"100%"} />
+          <p style={{ textAlign: "left" }}>
+            Check out our selection of handcrafted beers.
+          </p>
+        </div>
+      </Link>
+      <div className="container">
+        <h2 className="h2">Random Beer</h2>
+        <img src={randomBeerImg} alt="all-beers" width={"100%"} />
+        <p style={{ textAlign: "left" }}>
+          Feeling adventurous? Click to discover a beer of our choice.
+        </p>
+      </div>
+      <div className="container">
+        <h2 className="h2">New Beer</h2>
+        <img src={newBeerImg} alt="all-beers" width={"100%"} />
+        <p style={{ textAlign: "left" }}>Add a new beer to the collection.</p>
+      </div>
     </div>
   );
 }
