@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 function Homepage() {
   return (
     <div>
-      <h1>This is the Homepage component</h1>
       <Link to={"/beers"}>
         <div className="container">
           <h2 className="h2">Check all Beers</h2>
